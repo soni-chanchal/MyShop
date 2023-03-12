@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Cart</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navbar-one">
+
+    </section>
+    <main class="main container">
+        <div class="row">
+            <div class="col-md-2 d-md-block d-none">
+                <!-- side filter -->
+                <section id="sidebar-one"></section>
+            </div>
+            <div class="col-md-10 col-sm-12">
+                <!-- products page -->
+                <section id="products"></section>
+            </div>
+        </div>
+    </main>
+    <section id="footer-one">
+     
+    </section>
+
+    <!-- scripts -->
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="node_modules\@popperjs\core\dist\cjs\popper.js"></script>
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script>
+        $(function () {
+            $("#navbar-one").load("navbar.html");
+            $("#footer-one").load("footer.html");
+            $("#sidebar-one").load("sidebar.html");
+            $("#products").load("product.html");
+        });
+    </script>
+</body>
+
+</html>

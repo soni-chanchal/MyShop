@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <footer class="mt-100 overflow-hidden bg-dark">
+        <div class="footer-top mt-3">
+            <div class="container">
+                <div class="footer-widget-wrapper">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-12 mt-2">
+                            <div class="footer-widget-inner">
+                                <h4 class="footer-heading d-flex align-items-center justify-content-between">
+                                    <span>About</span>
+                                    <span class="d-md-none">
+                                        <i class="fa-solid fa-angle-down" (click)="showAbout=!showAbout"></i>
+                                    </span>
+                                </h4>
+                                <ul class="footer-menu list-unstyled mb-0 d-md-block" *ngIf="showAbout">
+                                    <li class="footer-menu-item"><a href="#">About us</a></li>
+                                    <li class="footer-menu-item"><a href="#">Press center</a></li>
+                                    <li class="footer-menu-item"><a href="blog.html">Our magazine</a></li>
+                                    <li class="footer-menu-item"><a href="#">Our group</a></li>
+                                    <li class="footer-menu-item"><a href="#">Work with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-12 mt-2">
+                            <div class="footer-widget-inner">
+                                <h4 class="footer-heading d-flex align-items-center justify-content-between">
+                                    <span>Shopping</span>
+                                    <span class="d-md-none">
+                                        <i class="fa-solid fa-angle-down" (click)="showShopping=!showShopping"></i>
+                                    </span>
+                                </h4>
+                                <ul class="footer-menu list-unstyled mb-0 d-md-block" *ngIf="showShopping">
+                                    <li class="footer-menu-item"><a href="#">Brand catalog</a></li>
+                                    <li class="footer-menu-item"><a href="#">Discount codes</a></li>
+                                    <li class="footer-menu-item"><a href="collection-left-sidebar.html">Furniture</a>
+                                    </li>
+                                    <li class="footer-menu-item"><a href="collection-left-sidebar.html">Sofa</a></li>
+                                    <li class="footer-menu-item"><a href="collection-left-sidebar.html">Chair</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-12 mt-2">
+                            <div class="footer-widget-inner">
+                                <h4 class="footer-heading d-flex align-items-center justify-content-between">
+                                    <span>Help</span>
+                                    <span class="d-md-none">
+                                        <i class="fa-solid fa-angle-down" (click)="showHelp=!showHelp"></i>
+                                    </span>
+                                </h4>
+                                <ul class="footer-menu list-unstyled mb-0 d-md-block" *ngIf="showHelp">
+                                    <li class="footer-menu-item"><a href="faq.html">Chair</a></li>
+                                    <li class="footer-menu-item"><a href="#">Privacy policy</a></li>
+                                    <li class="footer-menu-item"><a href="#">Support</a></li>
+                                    <li class="footer-menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-6 col-12 mt-2">
+                            <div class="footer-widget-inner">
+                                <h4 class="footer-logo">
+                                    <a href="/">
+                                        <h2 class="text-white">TCart</h2>
+                                    </a>
+                                </h4>
+                                <div class="footer-newsletter">
+                                    <p class="footer-text mb-3">Stay up to date with all the news.</p>
+                                    <div class="newsletter-wrapper">
+                                        <form action="#" class="footer-newsletter-form d-flex align-items-center">
+                                            <div class="input-group mb-3">
+                                                <input type="email" class="form-control bg-transparent text-white"
+                                                    placeholder="Your e-mail" aria-label="Recipient's username"
+                                                    aria-describedby="basic-addon2" autocomplete="off">
+                                                <button class="input-group-text" id="basic-addon2">SIGN UP</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="mt-2">
+                                        <ul class="list-unstyled d-flex align-items-center flex-wrap mb-0">
+                                            <li class="footer-social-item">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-twitter fa-lg m-2 text-white"></i>
+                                                </a>
+                                            </li>
+                                            <li class="footer-social-item">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-square-facebook fa-lg m-2 text-white"></i>
+                                                </a>
+                                            </li>
+                                            <li class="footer-social-item">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-instagram fa-lg m-2 text-white"></i>
+                                                </a>
+                                            </li>
+                                            <li class="footer-social-item">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-tiktok fa-lg m-2 text-white"></i>
+                                                </a>
+                                            </li>
+                                            <li class="footer-social-item">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-youtube fa-lg m-2 text-white"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-2">
+            <div class="container">
+                <div
+                    class="footer-bottom-inner d-flex flex-wrap justify-content-md-between justify-content-center align-items-center">
+                    <ul class="footer-bottom-menu list-unstyled d-flex flex-wrap align-items-center mb-0">
+                        <li class="footer-menu-item">
+                            <a href="#">Privacy Policy </a>
+                        </li>
+                        <li class="footer-menu-item mx-5">
+                            <a href="#">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                    <p class="mt-2 footer-text">&copy;<span class="current-year">2023</span> TCart</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
